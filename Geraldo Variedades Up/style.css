@@ -1,0 +1,141 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #CEEBD1; /* cor de fundo */
+    color: #333; /* cor principal de texto */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #A6ADA7; /* cor principal do cabeçalho */
+    padding: 10px 0; /* Aumentando um pouco o padding vertical */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Garante que o cabeçalho esteja acima de outros elementos */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: #fff; /* cor do texto no cabeçalho */
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff; /* cor dos links no cabeçalho */
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #FFA500; /* cor de destaque (laranja) */
+    border-radius: 5px;
+}
+
+section {
+    padding: 100px 0; /* Espaçamento maior para as seções */
+}
+
+section h2 {
+    color: #FFA500; /* cor de destaque (laranja) */
+    text-align: center;
+}
+
+.bg-light {
+    background-color: #bbe3bf; /* de fundo leve para seções alternadas */
+}
+
+footer {
+    background-color: #A6ADA7; /* cor do rodapé */
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    color: #fff; /* cor do texto no rodapé */
+}
+
+/* Ajuste de padding para as seções */
+.section-padding {
+    padding-top: 110px; /* Ajuste conforme necessário */
+    padding-bottom: 110px;
+}
+
+/* Estilos simples para os cartões */
+.card {
+    width: calc(22.5%);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    display: inline-block; /* Faz os cartões ficarem lado a lado */
+    vertical-align: top; /* Alinha os cartões ao topo */
+    box-sizing: border-box; /* Garante que padding e borda não aumentem a largura */
+}
+
+.card img {
+    max-width: 90%;
+    border-radius: 8px;
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.card p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Clearfix para limpar floats */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Estilos para os ícones */
+.contact-info li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-info li .icon {
+    width: 24px; /* Tamanho desejado para os ícones */
+    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+    vertical-align: middle; /* Alinha verticalmente com o texto */
+}
