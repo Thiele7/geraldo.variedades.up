@@ -103,6 +103,7 @@ footer p {
     display: inline-block; /* Faz os cartões ficarem lado a lado */
     vertical-align: top; /* Alinha os cartões ao topo */
     box-sizing: border-box; /* Garante que padding e borda não aumentem a largura */
+    background-color: #6fc978;
 }
 
 .card img {
